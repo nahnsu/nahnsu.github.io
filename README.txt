@@ -1,7 +1,7 @@
 This is a science communication website that hopes to share research in quantum avian magentoreception.
 
 FILES:
-It uses HTML, CSS and Javascript. There are three HTML pages, one introductory page with the abstract (index.html), one page with most of the contents of the paper (paper.html), and one page where the user can leave comments(visitors.html). The Javascript and CSS files are shared by all three HTML pages, and named javascript.js and style.css. Also included is the original paper that this website is based of, as a pdf (Master'sThesis.pdf).
+It uses HTML, CSS and Javascript. There are three HTML pages, one introductory page with the abstract, one page with most of the contents of the paper, and one page where the user can leave comments. The Javascript and CSS files are shared by all three HTML pages, and named javascript.js and style.css. Also included is the original paper that this website is based of, as a pdf (Master'sThesis.pdf).
 
 STYLE:
 This website uses three fonts of similar aesthetic, imported using the google font API. The default font used is Antic Slab. All headers except h6 are in Antic Didone. Figure captions, h6 headers, and other miscellaneous pieces of text are in Antic (which is sans-serif). These fonts were chosen because of their similarity to the font of the original paper.
