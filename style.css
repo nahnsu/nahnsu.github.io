@@ -1,0 +1,111 @@
+/* font-family: 'Antic', sans-serif;
+font-family: 'Antic Didone', serif;
+font-family: 'Antic Slab', serif; */
+
+html{
+    font-family: 'Antic Slab', serif;
+    font-size: large;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Antic Didone', serif;
+}
+
+figcaption, h6{
+    font-family: 'Antic', sans-serif;
+}
+
+.open-sidebar{
+    z-index: 1;
+    background-color: lightgrey;
+    font-size: large;
+    font-family: 'Antic Slab', serif;
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.8s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#sidebar a {
+    padding: 10px;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.whole-thing{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.abstract, .about, .comments{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    text-align: justify;
+    text-justify: auto;
+    text-align-last: center;
+}
+
+.shortline{
+    width: 50%;
+}
+
+.flip-trigger{
+    cursor: pointer;
+}
+
+.flip-card{
+    display: block;
+    perspective: 600px;
+}
+
+.hidden-flip{
+    display: none;
+}
+
+#avian-migration, #radical-pair-mechanism{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    background: lightslategrey;
+}
+
+#avian-migration > div, #radical-pair-mechanism div{
+    flex: 0 0 33.3333333%;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+}
+
+
+
+

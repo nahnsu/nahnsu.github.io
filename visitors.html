@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QuAC: Interactive Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./javascript.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Antic+Didone&family=Antic+Slab&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="whole-thing">
+        <nav id="sidebar">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./paper.html">Paper</a>
+            <br>
+        </nav>
+
+        <div id="main">
+            <button class="open-sidebar" onclick="openNav()">
+                <p>&#8801</p>
+            </button>
+            <h1>Leave a Comment!</h1>
+
+            <div class="comments">
+                <form name="commentform">
+                    <b>Name:</b> <input TYPE="text" NAME="name">
+                    <br>
+                    <b>Comment:</b> 
+                    <textarea name="text" style="width: 100%;"></textarea>
+                    <!-- <input TYPE="text" NAME="text"> -->
+                    <br>
+                    <input TYPE="button" VALUE="Submit" onClick="comment();"></p>
+                    </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
