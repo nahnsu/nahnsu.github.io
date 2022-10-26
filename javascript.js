@@ -23,10 +23,10 @@ function fig2() {
     }
 }
 
-function flip(id, text_id, back) {
-    var flipcard = document.getElementById(id);
-    var text = document.getElementById(text_id);
-    var temp = document.getElementById('text-holder');
+function flip(id, text_id, back){
+  var flipcard = document.getElementById(id);
+  var text = document.getElementById(text_id);
+  var temp = document.getElementById('text-holder');
 
     flipcard.style.transitionDuration = "2s";
 
