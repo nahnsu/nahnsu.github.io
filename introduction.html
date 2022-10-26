@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Curriculum Vitae</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Master's Thesis</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -67,34 +67,36 @@
                     <a href=""><i class="bi bi-arrow-right-circle-fill"></i></a>
                 </div>
             </div>
-            
+
             <hr>
-            
-            <div id="avian-migration">
-                <div>
+
+            <div class="row">
+                <div class="col-6 card">
                     <h3>1.1 Avian Migration</h3>
                     <p>
                         During migration, birds
                         display an ability to travel during day and night, across large areas of featureless ocean
                         or desert, correcting course when displaced [<a href="https://pubmed.ncbi.nlm.nih.gov/18249113/" target="_blank">1</a>].</p>
                 </div>
-                <figure class="diagram">
-                    <figcaption>Fig.1 - Examples of Avian Migration Routes
-                        <br>
-                        <a href=" https://commons.wikimedia.org/w/index.php?curid=3585165" target="_blank">source</a>
-                    </figcaption>
-                    <img src="./resources/Migrationroutes.svg" alt="image of some global bird migration routes" style="width: 100%; max-width: 500px;">
 
+                <figure class="figure img-fluid col-6 card">
+                    <img src="./resources/Migrationroutes.svg" class="figure-img img-fluid rounded" alt="image of some global bird migration routes" style="max-width:500px">
+<!--                    style="width: 100%; max-width: 500px;"-->
+                    <figcaption class="figure-caption">Fig.1 - Examples of Avian Migration Routes
+                        <br>
+                        <a href=" https://commons.wikimedia.org/w/index.php?curid=3585165" target="_blank">from Wikipedia</a>
+                    </figcaption>
+                    
                 </figure>
 
-                <div>
+                <div class="col-6 card">
                     <p>
                         This indicates that they are not only using
                         visual and olfactory markers to form a map, but also have an internal compass by which they
                         are able to determine their orientation, thus allowing them to perform true navigation [<a href="https://www.researchgate.net/publication/11784382_Avian_orientation_at_steep_angles_of_inclination_experiments_with_migratory_White-crowned_Sparrows_at_the_magnetic_North_Pole" target="_blank">2</a>].
                     </p>
                 </div>
-                <div>
+                <div class="col-6 card">
                     <p>
                         Experiment reveals that birds are sensitive to magnetic fields on the order of the Earth’s
                         magnetic
@@ -103,14 +105,14 @@
                         migration.
                     </p>
                 </div>
-                <div>
+                <div class="col-6 card">
                     <p>
                         Their method of detection also seems to require light, as their use of a magnetic
                         compass in course correction is inhibited at night [4].
                     </p>
                 </div>
 
-                <div id="flip-5" class="flip-card">
+                <div class="col-6 card">
                     <p>
                         The Earth’s magnetic field does not usually have an impact on biological systems because it
                         is so weak: the effect of thermal fluctuations is far
