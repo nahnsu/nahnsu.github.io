@@ -11242,4 +11242,21 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  /*For tables*/
+  .ritz .waffle a {
+    color: inherit;
+}
+
+.ritz .waffle .s0 {
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: 'Arial';
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
 }
