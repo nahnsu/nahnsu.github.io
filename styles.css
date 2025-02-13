@@ -1,10 +1,4 @@
 
-.image-fifty {
-  width: 50%; /* Makes the image take up half the screen width */
-  display: block; /* Removes default inline behavior */
-  margin: 0 auto; /* Centers the image horizontally */
-}
-
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -34,6 +28,24 @@
   margin: 10px;
 }
 
+.notice-yellow {
+  background: var(--accent-bg);
+  border: 1px solid orange;
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+
+.notice-yellow {
+  background: var(--accent-bg);
+  border: 1px solid orange;
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
 table {
   width: 100%;
   border-collapse: collapse; /* Ensures no double borders */
@@ -79,11 +91,7 @@ nav a:hover {
   background-color: #555;
 }
 
-.notice-yellow {
-  background: var(--accent-bg);
-  border: 1px solid orange;
-  border-radius: var(--standard-border-radius);
-  padding: 1.5rem;
-  margin: 2rem 0;
-  text-align: justify;
+body {
+  margin: 0;
+  padding: 0;
 }
