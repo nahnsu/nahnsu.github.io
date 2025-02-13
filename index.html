@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nahnsu's Website</title>
@@ -10,11 +11,11 @@
 <body>
   <header>
     <nav>
-        <a class="current" href="#About">About</a>
-        <a class="current" href="#Resume">Resume</a>
-        <a class="current" href="#Bookshelf">Bookshelf</a>
-        <a class="current" href="#DnD"></a>
-        <a class="current" href="#3D Printing"></a>
+        <!-- <a class="current" href="#DnD">DnD</a>
+        <a class="current" href="#3D Printing">3D Printing</a> -->
+        <a href="#About">About</a>
+        <a href="#Resume">Resume</a>
+        <a href="#Bookshelf">Bookshelf</a>
     </nav>
   </header>
 
@@ -22,15 +23,116 @@
     <section id="About">
             <h1>Hi, I'm Nahnsu!</h1>
             <p>I'm a software engineer with a background in Physics and computational simulations. I live in Minnesota with my dog, who does all the coding behind the scenes. </p>
-            <p> When not coding, I can be found at my local gamestore or brewery playing DnD</p>
+            <p> When not behind a screen, I can be found at my local gamestore or brewery playing Dungeons and Dragons.</p>
             <figure>
-                <img alt="A picture of my pug coding" src="resources/guppy_codes.png">
+                <img class="image-fifty" alt="A picture of my pug coding" src="resources/guppy_codes.png">
                 <figcaption>The brains behind the operation</figcaption>
             </figure>
     </section>
 
     <section id="Resume">
-            <h1>Resume</h1>
+      <h1>Resume</h1>
+      
+      <div class="flex-container">
+        <div class="box">
+          <a href="https://www.linkedin.com/in/nahnsu/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/nahnsu" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      
+      <p class="notice-yellow">
+        Innovative software engineer with a Master’s in Physics and expertise in full-stack and data engineering. Skilled in scalable system design, automation, and CI/CD pipelines, I build high-quality enterprise applications. Seeking a challenging role where I can make a measurable impact.
+      </p>
+      
+      <details>
+        <summary>Skills</summary>
+        <table>
+          <tr>
+            <td>Python</td>
+            <td>Java</td>
+            <td>Javascript</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>Scala Spark</td>
+            <td>SQL</td>
+          </tr>
+          <tr>
+            <td>Kubernetes</td>
+            <td>Docker</td>
+            <td>Jenkins</td>
+          </tr>
+          <tr>
+            <td>Snowflake</td>
+            <td>Elasticsearch</td>
+            <td>Azure</td>
+          </tr>
+          <tr>
+            <td>Kafka</td>
+            <td>Grafana, Confluent</td>
+            <td>Git + Github</td>
+          </tr>
+          <tr>
+            <td>REST APIs</td>
+            <td>Agile, Scrum</td>
+            <td>CI/CD</td>
+          </tr>
+        </table>
+        
+      </details>
+      
+      <details>
+        <summary>Experience</summary>
+        <article>
+          <h3>Software Engineer - Optum</h3>
+          <p><code>Feb 2023 - Present</code></p>
+          <ul>
+            <li>Developed an anomaly detection tool for healthcare benefits data, integrating data pipelines (Kafka and Snowflake), cloud computing (Azure), REST APIs (Java and Spring Boot), and an interactive frontend for dashboard visualization (React)</li>
+            <li>Built ETL and real time data processing pipelines, integrating data from six legacy systems</li>
+            <li>Collaborated with cross-functional teams to perform data monitoring and statistical analysis, informing architectural decisions and resolving critical system issues</li>
+            <li>Implemented event driven architecture in Azure Data Factory, Azure Databricks, and Snowflake to reduce computational load 40% from billions of records</li>
+            <li>Created data driven API's to give users the ability to configure custom pipelines in Azure</li>
+            <li>Built automation scripts for data processing and workflow automation in Python and SQL</li>
+            <li>Mentored junior team members in best practices in engineering and code quality</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Associate Software Engineer - Optum</h3>
+          <p><code>Feb 2022 - Feb 2023</code></p>
+          <ul>
+            <li>Developed a tool for uploading and managing samples of claims data for reporting</li>
+            <li>Worked directly with stakeholders to understand prioritization and inform technical design</li>
+            <li>Managed and used CI/CD pipelines to ensure rapid deployment and code quality</li>
+            <li>Created Kibana dashboards and data visualizations impacting product decisions</li>
+            <li>Implemented robus logging systems for monitoring and faster defect remediation</li>
+          </ul>
+        </article>
+      </details>
+      
+      <details>
+        <summary>Education</summary>
+        <article>
+          <h3>Master of Physics with Honors - University of Exeter</h3>
+          <p><code>Sept 2016 - July 2020</code></p>
+          <ul>
+            <li>Completed a four-year integrated graduation and master’s degree in physics (MPhys)</li>
+            <li>Master's thesis: solving optimization problems in a simulation of biological quantum system, implemented in Python and run on a distributed computing system</li>
+            <li>Specialized in coding simulations and using computational techniques to solve problems</li>
+            <li>Key modules: Computational Physics and Modeling, Scientific Programming in C, Statistical Physics</li>
+          </ul>
+        </article>
+      </details>
+    </section>
+    
+
+    <section id="Bookshelf">
+        <h1>Bookshelf</h1>
     </section>
 
   </main>
