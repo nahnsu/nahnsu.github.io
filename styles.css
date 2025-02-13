@@ -8,10 +8,11 @@
 .flex-container {
   display: flex; /* Enables flexbox */
   justify-content: center; /* Centers items horizontally */
-  align-items: center; /* Centers items vertically */
+  align-items: stretch; /* Centers items vertically */
 }
 
 .box {
+  flex: 1;
   padding: 20px;
   margin: 10px;
 }
