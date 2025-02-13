@@ -5,6 +5,18 @@
   margin: 0 auto; /* Centers the image horizontally */
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust spacing between images */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .flex-container {
   display: flex; /* Enables flexbox */
   justify-content: center; /* Centers items horizontally */
