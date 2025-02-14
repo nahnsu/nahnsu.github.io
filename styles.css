@@ -1,16 +1,4 @@
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px; /* Adjust spacing between images */
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .flex-container {
   display: flex; /* Enables flexbox */
   justify-content: center; /* Centers items horizontally */
@@ -38,14 +26,6 @@
 }
 
 
-.notice-yellow {
-  background: var(--accent-bg);
-  border: 1px solid orange;
-  border-radius: var(--standard-border-radius);
-  padding: 1.5rem;
-  margin: 2rem 0;
-  text-align: justify;
-}
 table {
   width: 100%;
   border-collapse: collapse; /* Ensures no double borders */
@@ -63,7 +43,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%; /* Full width */
-  background-color: slategrey;
+  background-color: grey;
+  background-image: url(resources/orangenetwork.webp);
   padding: 10px 0;
   display: flex;
   justify-content: space-evenly; /* Even spacing between buttons */
@@ -77,10 +58,49 @@ nav a {
   background-color: black;
   flex: 1;
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.carousel img {
+  max-height: 70vh;  /* Limits the image height to 400px */
+  width: auto;        /* Keeps the aspect ratio intact */
+  display: flex;     /* Removes any extra spacing below images */
+  margin: auto;     /* Centers the image horizontally if it's smaller than the container */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  font-size: 25px;
+}
+
+.carousel button:hover {
+  background-color: darkgrey;
+}
+
+.carousel-images {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  display: none;
+}
+
+.carousel-images img.active {
+  display: block;
 }
