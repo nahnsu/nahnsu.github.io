@@ -1,10 +1,4 @@
 
-.image-fifty {
-  width: 50%; /* Makes the image take up half the screen width */
-  display: block; /* Removes default inline behavior */
-  margin: 0 auto; /* Centers the image horizontally */
-}
-
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -24,11 +18,34 @@
 }
 
 .box {
+  padding: 20px;
+  margin: 10px;
+}
+
+.flex-box {
   flex: 1;
   padding: 20px;
   margin: 10px;
 }
 
+.notice-yellow {
+  background: var(--accent-bg);
+  border: 1px solid orange;
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+
+.notice-yellow {
+  background: var(--accent-bg);
+  border: 1px solid orange;
+  border-radius: var(--standard-border-radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
 table {
   width: 100%;
   border-collapse: collapse; /* Ensures no double borders */
@@ -46,39 +63,24 @@ nav {
   top: 0;
   left: 0;
   width: 100%; /* Full width */
-  background-color: #333;
+  background-color: slategrey;
   padding: 10px 0;
   display: flex;
   justify-content: space-evenly; /* Even spacing between buttons */
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000; /* Ensures it stays on top */
-}
-
-/* Navbar Buttons */
-nav a {
-  flex: 1; /* Makes each button equally sized */
-  text-align: center;
-  padding: 15px;
   color: white;
-  text-decoration: none;
-  font-size: 18px;
-  background-color: #444; /* Button background */
-  border-radius: 5px;
-  margin: 5px;
-  transition: background-color 0.3s;
 }
 
-/* Hover Effect */
-nav a:hover {
-  background-color: #555;
+nav a {
+  background-color: black;
+  flex: 1;
+  text-align: center;
+  font-size: 25px;
 }
 
-.notice-yellow {
-  background: var(--accent-bg);
-  border: 1px solid orange;
-  border-radius: var(--standard-border-radius);
-  padding: 1.5rem;
-  margin: 2rem 0;
-  text-align: justify;
+body {
+  margin: 0;
+  padding: 0;
 }
