@@ -1,3 +1,7 @@
+.carousel-images img {
+  height: 70vh;
+}
+
 
 .flex-container {
   display: flex; /* Enables flexbox */
@@ -37,6 +41,7 @@ td {
   border: none; /* Removes both vertical and horizontal lines */
 }
 
+
 /* Navbar Styles */
 nav {
   position: fixed; /* Stays fixed at the top */
@@ -44,7 +49,7 @@ nav {
   left: 0;
   width: 100%; /* Full width */
   background-color: grey;
-  background-image: url(resources/orangenetwork.webp);
+  background-image: radial-gradient(circle, lightgrey, #333333);
   padding: 10px 0;
   display: flex;
   justify-content: space-evenly; /* Even spacing between buttons */
@@ -64,43 +69,4 @@ nav a {
 body {
   margin: 0;
   padding: 0;
-}
-
-.carousel img {
-  max-height: 70vh;  /* Limits the image height to 400px */
-  width: auto;        /* Keeps the aspect ratio intact */
-  display: flex;     /* Removes any extra spacing below images */
-  margin: auto;     /* Centers the image horizontally if it's smaller than the container */
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel button {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-  z-index: 1;
-  font-size: 25px;
-}
-
-.carousel button:hover {
-  background-color: darkgrey;
-}
-
-.carousel-images {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-images img {
-  display: none;
-}
-
-.carousel-images img.active {
-  display: block;
 }
