@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: #f0f0f0;
+    font-family: sans-serif;
+  }
+  .carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    width: 300%; /* three slides */
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+  /* Hide radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  /* Manual navigation dots */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .manual-btn:hover {
+    background: #fff;
+  }
+  /* Slide positioning based on checked radio */
+  #radio1:checked ~ .slides {
+    transform: translateX(0);
+  }
+  #radio2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  #radio3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
