@@ -6,7 +6,7 @@
 .flex-container {
   display: flex; /* Enables flexbox */
   justify-content: center; /* Centers items horizontally */
-  align-items: stretch; /* Centers items vertically */
+  align-items: center; /* Centers items vertically */
 }
 
 .box {
