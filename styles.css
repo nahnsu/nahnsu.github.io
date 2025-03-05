@@ -1,13 +1,13 @@
 .carousel-images img {
   flex: auto;
-  height: 70vh;
+  height: 50vh;
 }
 
 .nav-button {
-  flex: 1 0 50%;
+  flex: 1 0 40%;
   max-width: 40%;
   text-align: center;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 
