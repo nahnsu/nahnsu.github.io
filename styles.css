@@ -1,4 +1,5 @@
 .carousel-images img {
+  flex: auto;
   height: 70vh;
 }
 
