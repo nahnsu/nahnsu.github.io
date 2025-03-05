@@ -1,6 +1,9 @@
 .carousel-images img {
   flex: auto;
-  height: 50vh;
+  height: 70vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .nav-button {
