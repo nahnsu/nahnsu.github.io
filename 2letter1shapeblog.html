@@ -6,14 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letter Gallery</title>
-    <style>
-        .small_images {
-          height: 50vh;
-          width: auto;
-          object-fit: contain;
-        }
-    </style>
+    <title>Letter Gallery</title>>
 </head>
 <body>
   <header>
@@ -23,6 +16,7 @@
           <p>
             <a href="#Method">Method</a>
             <a href="#Results">Results</a>
+            <a href="#Analysis">Analysis</a>
         </details>
         <a  class="nav-button" href="index.html"><i class="fa-solid fa-house"></i></a>
     </nav>
@@ -167,6 +161,12 @@
           <td><img class="small_images" src="output/claude_Z.png" alt="Z"></td>
         </tr>
       </table>
+    </section>
+
+    <section id="Analysis">
+      <br><br><br><br><br>
+      <h2>Analysis</h2>
+      <p> When I was making the letters manually, the hardest part was following my own rule, that the width of the letters should be 1/6. For diagonals this required a little bit of geometry that none of the models exhibited. The S was another letter that required calculations to figure out what the radius of different arcs should be. Incidentally, S is easily the worst output letter by each of the models. Overall, in my opinion Claude performed the best, while o1 and Grok were neck and neck, doing better on some letters and flubbing others.</p>
     </section>
   </main>
 
