@@ -1,3 +1,8 @@
+.half-image img {
+  flex: auto;
+  width: 40%;
+}
+
 .carousel-images img {
   flex: auto;
   height: 70vh;
