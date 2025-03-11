@@ -1,7 +1,9 @@
 .small_images {
-  height: 50vh;
+  height: 150px; /* Fixed height instead of 50vh */
   width: auto;
   object-fit: contain;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .half-image img {
